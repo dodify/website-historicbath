@@ -1,0 +1,128 @@
+/**
+ * Historic Bath style sheet.
+ *
+ * Somewhat responsive.
+ *
+ * @copyright   2015 dodify Ltd.
+ * @license     See LICENSE in repository root
+ */
+
+/* General */
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #F2F2F2;
+    color: #6B7381;
+}
+
+a {
+    text-decoration: none;
+    color: #6B7381;
+}
+
+a:hover {
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Prata', serif;
+}
+
+.go {
+    display: none;
+}
+
+/* Main layout */
+header, section, footer {
+    width: 98%;
+    max-width: 1030px;
+    min-width: 320px;	
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-top: 2em;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header h2 {
+    font-size: 1.5em;
+}
+
+header li {
+    display: inline-block;
+    padding: 2em;
+}
+
+/* Grid section */
+.item {
+    width: 33%;
+    float: left;
+}
+
+.item > div {
+    padding: .25em;
+    margin: .25em;
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+.item h3 {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.item a, #map .scrollFix a {
+    width: 27%;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 1%;
+    padding: 2%;
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.item a:hover, #map .scrollFix a:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* Map section */
+#map .scrollFix {
+    line-height: 1.35;
+    overflow: hidden;
+    text-align: center;
+}
+
+#map .scrollFix a {
+    width: 44%;
+    margin-top: .5em;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 650px) {
+
+    .item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+IndexIgnore */*
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    
+    # Redirect non www to www
+    RewriteCond %{HTTP_HOST} !=localhost
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+    
+    # HTML file ending not needed
+    RewriteRule ^([^\.]+)$ $1.html [NC,L]
+</IfModule>
