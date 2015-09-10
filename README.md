@@ -10,4 +10,4 @@ Set Up
 - Download and place the code within your web server root;
 - Extract the <a href="http://www.historyofbath.co.uk/images.zip">images</a> folder and place it inside the root directory;
 - Documentation is provided within the source code;
-- Requires Apache.
+- Requires Apache (no PHP required).
